@@ -1,0 +1,40 @@
+//console.log(checkboxes);
+//console.log(checkboxes[0].checked);
+(function enableBtn () {
+    var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    var butts = document.getElementsByClassName('sqs-editable-button');
+   // console.log(butts[1]);
+    butts[1].disabled = true;
+    function checkEvent () {
+        for (var i = 0; i = checkboxes.length; i++) {
+            checkboxes[i].addEventListener("checked", function checkCounter() {
+                var count = checkboxes.checked.length;
+                console.log(count);
+                if(count === 6){
+                    butts[1].disabled = false;
+                };
+                for (var i = 0; i === checkboxes.length; i++) {
+                    checkEvent, checkCounter;
+                };
+            });
+        };
+    };
+
+
+})();
+
+
+
+//yui_3_17_2_1_1508274658659_431
+// var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+     //console.log(submitBtn.getElementByClass('sqs-editable-button'));
+
+
+     //for (var box in checkboxes) {
+       // console.log(box);
+      //  box.addEventListener("checked", checkCounter);
+
+  //  }
+    //for (i = 0; i < checkboxes.length; i ++) {
+//
+  //  }
